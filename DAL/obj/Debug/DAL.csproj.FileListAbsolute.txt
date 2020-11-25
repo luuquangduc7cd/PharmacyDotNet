@@ -1,0 +1,13 @@
+C:\Users\Gia Lai\Desktop\Pharmacy\DAL\bin\Debug\DAL.exe.config
+C:\Users\Gia Lai\Desktop\Pharmacy\DAL\bin\Debug\DAL.exe
+C:\Users\Gia Lai\Desktop\Pharmacy\DAL\bin\Debug\DAL.pdb
+C:\Users\Gia Lai\Desktop\Pharmacy\DAL\bin\Debug\DTO.exe
+C:\Users\Gia Lai\Desktop\Pharmacy\DAL\bin\Debug\DTO.pdb
+C:\Users\Gia Lai\Desktop\Pharmacy\DAL\bin\Debug\DTO.exe.config
+C:\Users\Gia Lai\Desktop\Pharmacy\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Gia Lai\Desktop\Pharmacy\DAL\obj\Debug\DAL.Properties.Resources.resources
+C:\Users\Gia Lai\Desktop\Pharmacy\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\Gia Lai\Desktop\Pharmacy\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Gia Lai\Desktop\Pharmacy\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Gia Lai\Desktop\Pharmacy\DAL\obj\Debug\DAL.exe
+C:\Users\Gia Lai\Desktop\Pharmacy\DAL\obj\Debug\DAL.pdb

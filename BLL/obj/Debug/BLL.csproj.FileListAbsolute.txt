@@ -1,0 +1,16 @@
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\bin\Debug\BLL.exe.config
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\bin\Debug\BLL.exe
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\bin\Debug\BLL.pdb
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\bin\Debug\DAL.exe
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\bin\Debug\DTO.exe
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\bin\Debug\DAL.pdb
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\bin\Debug\DAL.exe.config
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\bin\Debug\DTO.pdb
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\bin\Debug\DTO.exe.config
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\obj\Debug\BLL.Properties.Resources.resources
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\obj\Debug\BLL.csproj.GenerateResource.cache
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\obj\Debug\BLL.exe
+C:\Users\Gia Lai\Desktop\Pharmacy\BLL\obj\Debug\BLL.pdb

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Pharmacy" Class="PharmacyDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=Lwu;Initial Catalog=Pharmacy;Integrated Security=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="PharmacyConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ChiTietHoaDon" Member="ChiTietHoaDons">
+    <Type Name="ChiTietHoaDon">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idHoaDon" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idThuoc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="soLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Thuoc_ChiTietHoaDon" Member="Thuoc" ThisKey="idThuoc" OtherKey="id" Type="Thuoc" IsForeignKey="true" />
+      <Association Name="HoaDon_ChiTietHoaDon" Member="HoaDon" ThisKey="idHoaDon" OtherKey="id" Type="HoaDon" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Thuoc" Member="Thuocs">
+    <Type Name="Thuoc">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ten" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="donVi" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="donGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="soLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nhaCungCap" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="hanSuDung" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="idNhanVien" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Thuoc_ChiTietHoaDon" Member="ChiTietHoaDons" ThisKey="id" OtherKey="idThuoc" Type="ChiTietHoaDon" />
+      <Association Name="NhanVien_Thuoc" Member="NhanVien" ThisKey="idNhanVien" OtherKey="id" Type="NhanVien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HoaDon" Member="HoaDons">
+    <Type Name="HoaDon">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ngayLap" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="idKhach" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idNhanVien" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="tongTien" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Association Name="HoaDon_ChiTietHoaDon" Member="ChiTietHoaDons" ThisKey="id" OtherKey="idHoaDon" Type="ChiTietHoaDon" />
+      <Association Name="Khach_HoaDon" Member="Khach" ThisKey="idKhach" OtherKey="id" Type="Khach" IsForeignKey="true" />
+      <Association Name="NhanVien_HoaDon" Member="NhanVien" ThisKey="idNhanVien" OtherKey="id" Type="NhanVien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Khach" Member="Khaches">
+    <Type Name="Khach">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ten" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="sdt" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="diaChi" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Association Name="Khach_HoaDon" Member="HoaDons" ThisKey="id" OtherKey="idKhach" Type="HoaDon" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NhanVien" Member="NhanViens">
+    <Type Name="NhanVien">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ten" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="pwd" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="usr" Type="System.String" DbType="VarChar(64)" CanBeNull="true" />
+      <Association Name="NhanVien_Thuoc" Member="Thuocs" ThisKey="id" OtherKey="idNhanVien" Type="Thuoc" />
+      <Association Name="NhanVien_HoaDon" Member="HoaDons" ThisKey="id" OtherKey="idNhanVien" Type="HoaDon" />
+    </Type>
+  </Table>
+</Database>

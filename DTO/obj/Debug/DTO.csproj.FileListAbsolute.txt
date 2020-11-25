@@ -1,0 +1,9 @@
+C:\Users\Gia Lai\Desktop\Pharmacy\DTO\bin\Debug\DTO.exe.config
+C:\Users\Gia Lai\Desktop\Pharmacy\DTO\bin\Debug\DTO.exe
+C:\Users\Gia Lai\Desktop\Pharmacy\DTO\bin\Debug\DTO.pdb
+C:\Users\Gia Lai\Desktop\Pharmacy\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Gia Lai\Desktop\Pharmacy\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\Gia Lai\Desktop\Pharmacy\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+C:\Users\Gia Lai\Desktop\Pharmacy\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Gia Lai\Desktop\Pharmacy\DTO\obj\Debug\DTO.exe
+C:\Users\Gia Lai\Desktop\Pharmacy\DTO\obj\Debug\DTO.pdb
