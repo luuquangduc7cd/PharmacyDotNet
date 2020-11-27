@@ -22,11 +22,11 @@ namespace BLL
         public List<DTOHoaDonKhach> FilterBetween(DateTime from, DateTime to)
         {
             List<DTOHoaDonKhach> temp = list.GetAll();
-            List<DTOHoaDonKhach> result = list.GetAll();
+            List<DTOHoaDonKhach> result = new List<DTOHoaDonKhach>();
             foreach (DTOHoaDonKhach i in temp)
             {
                 DateTime timeOfBill = DateTime.ParseExact(i.NgayLap, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
-                if (DateTime.Compare(timeOfBill, from) >= 0 && DateTime.Compare(timeOfBill, to) <= 0)
+                if (DateTime.Compare(from, timeOfBill) <= 0 && DateTime.Compare(timeOfBill, to) <= 0)
                     result.Add(i);
             }
             return result;

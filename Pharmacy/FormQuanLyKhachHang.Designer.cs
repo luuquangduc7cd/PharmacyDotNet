@@ -107,7 +107,7 @@ namespace Pharmacy
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(150, 50);
             this.btnTimKiem.TabIndex = 5;
-            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.Text = "Tìm theo tên";
             this.btnTimKiem.UseVisualStyleBackColor = false;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
@@ -131,6 +131,7 @@ namespace Pharmacy
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(405, 27);
             this.txtDiaChi.TabIndex = 4;
+            this.txtDiaChi.Text = "Cái Bang";
             // 
             // txtSdt
             // 
@@ -138,6 +139,7 @@ namespace Pharmacy
             this.txtSdt.Name = "txtSdt";
             this.txtSdt.Size = new System.Drawing.Size(405, 27);
             this.txtSdt.TabIndex = 4;
+            this.txtSdt.Text = "0123456789";
             this.txtSdt.TextChanged += new System.EventHandler(this.txtSdt_TextChanged);
             // 
             // txtTen
@@ -146,6 +148,7 @@ namespace Pharmacy
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(405, 27);
             this.txtTen.TabIndex = 4;
+            this.txtTen.Text = "Phong";
             this.txtTen.TextChanged += new System.EventHandler(this.txtTen_TextChanged);
             // 
             // label5

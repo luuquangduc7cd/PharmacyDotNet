@@ -31,7 +31,9 @@ namespace Pharmacy
         {
             if(ValidTime())
             {
-                List<DTOHoaDonKhach> list = nhanVien.ThongKe(null, null);
+                string from = timeStart.Value.ToString("dd/MM/yyyy");
+                string to = timeEnd.Value.ToString("dd/MM/yyyy");
+                List<DTOHoaDonKhach> list = nhanVien.ThongKe(from, to);
                 LoadListHoaDonToListView(list);
                 return;
             }
@@ -54,14 +56,14 @@ namespace Pharmacy
 
         private bool ValidTime()
         {
-            if (DateTime.Compare(timeStart.Value, timeEnd.Value) <= 0)
+            if (DateTime.Compare(timeStart.Value, timeEnd.Value) < 0)
                 return true;
             return false;
         }
 
         private void btnXemToanBo_Click(object sender, EventArgs e)
         {
-            List<DTOHoaDonKhach> list = nhanVien.ThongKe(null, null);
+            List<DTOHoaDonKhach> list = nhanVien.ThongKe("", "");
             LoadListHoaDonToListView(list);
         }
     }

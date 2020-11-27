@@ -76,6 +76,7 @@ namespace Pharmacy
                 MessageBox.Show("Số lượng vượt quá khả năng cung cấp của nhà thuốc");
                 return;
             }
+            thuoc.SoLuong = soLuong;
             LoadThuocToHoaDon(thuoc, soLuong);
         }
 
@@ -216,6 +217,7 @@ namespace Pharmacy
 
         private void btnTim_Click(object sender, EventArgs e)
         {
+            tien = 0;
             DTOKhach khack = nhanVien.TimTheoSdt(txtSdt.Text);
             if (khack != null)
             {

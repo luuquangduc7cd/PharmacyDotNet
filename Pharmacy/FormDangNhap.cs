@@ -44,8 +44,6 @@ namespace Pharmacy
             }
             else
                 MessageBox.Show("Dữ liệu không hợp lệ");
-            txtUser.Clear();
-            txtPassword.Clear();
         }
     }
 }

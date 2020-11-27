@@ -54,7 +54,7 @@ namespace Pharmacy
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(250, 519);
+            this.pnlMenu.Size = new System.Drawing.Size(250, 500);
             this.pnlMenu.TabIndex = 0;
             // 
             // panel1
@@ -201,7 +201,7 @@ namespace Pharmacy
             this.pnlSubForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlSubForm.Location = new System.Drawing.Point(250, 0);
             this.pnlSubForm.Name = "pnlSubForm";
-            this.pnlSubForm.Size = new System.Drawing.Size(524, 519);
+            this.pnlSubForm.Size = new System.Drawing.Size(735, 500);
             this.pnlSubForm.TabIndex = 1;
             // 
             // FormQuanLy
@@ -209,7 +209,7 @@ namespace Pharmacy
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
-            this.ClientSize = new System.Drawing.Size(774, 519);
+            this.ClientSize = new System.Drawing.Size(985, 500);
             this.Controls.Add(this.pnlSubForm);
             this.Controls.Add(this.pnlMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

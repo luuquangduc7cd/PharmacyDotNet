@@ -32,6 +32,7 @@ namespace Pharmacy
             this.pnlForm = new System.Windows.Forms.Panel();
             this.time = new System.Windows.Forms.DateTimePicker();
             this.btnCapNhat = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
@@ -53,7 +54,6 @@ namespace Pharmacy
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnXoa = new System.Windows.Forms.Button();
             this.pnlForm.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +88,7 @@ namespace Pharmacy
             this.time.Name = "time";
             this.time.Size = new System.Drawing.Size(405, 27);
             this.time.TabIndex = 7;
+            this.time.Value = new System.DateTime(2021, 11, 27, 11, 49, 0, 0);
             // 
             // btnCapNhat
             // 
@@ -95,7 +96,7 @@ namespace Pharmacy
             this.btnCapNhat.FlatAppearance.BorderSize = 0;
             this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCapNhat.ForeColor = System.Drawing.Color.White;
-            this.btnCapNhat.Location = new System.Drawing.Point(607, 261);
+            this.btnCapNhat.Location = new System.Drawing.Point(718, 261);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(150, 50);
             this.btnCapNhat.TabIndex = 5;
@@ -103,17 +104,32 @@ namespace Pharmacy
             this.btnCapNhat.UseVisualStyleBackColor = false;
             this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
+            // btnXoa
+            // 
+            this.btnXoa.BackColor = System.Drawing.Color.Teal;
+            this.btnXoa.Enabled = false;
+            this.btnXoa.FlatAppearance.BorderSize = 0;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Location = new System.Drawing.Point(278, 261);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(150, 50);
+            this.btnXoa.TabIndex = 5;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
             // btnTimKiem
             // 
             this.btnTimKiem.BackColor = System.Drawing.Color.Teal;
             this.btnTimKiem.FlatAppearance.BorderSize = 0;
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(453, 261);
+            this.btnTimKiem.Location = new System.Drawing.Point(471, 261);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(150, 50);
+            this.btnTimKiem.Size = new System.Drawing.Size(204, 50);
             this.btnTimKiem.TabIndex = 5;
-            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.Text = "Tìm theo tên thuốc";
             this.btnTimKiem.UseVisualStyleBackColor = false;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
@@ -123,7 +139,7 @@ namespace Pharmacy
             this.btnThem.FlatAppearance.BorderSize = 0;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(145, 261);
+            this.btnThem.Location = new System.Drawing.Point(85, 261);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(150, 50);
             this.btnThem.TabIndex = 5;
@@ -137,6 +153,7 @@ namespace Pharmacy
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(405, 27);
             this.txtSoLuong.TabIndex = 4;
+            this.txtSoLuong.Text = "300";
             // 
             // txtNhaCungCap
             // 
@@ -144,6 +161,7 @@ namespace Pharmacy
             this.txtNhaCungCap.Name = "txtNhaCungCap";
             this.txtNhaCungCap.Size = new System.Drawing.Size(405, 27);
             this.txtNhaCungCap.TabIndex = 4;
+            this.txtNhaCungCap.Text = "Vina Thuốc";
             // 
             // txtGia
             // 
@@ -151,6 +169,7 @@ namespace Pharmacy
             this.txtGia.Name = "txtGia";
             this.txtGia.Size = new System.Drawing.Size(405, 27);
             this.txtGia.TabIndex = 4;
+            this.txtGia.Text = "50000";
             // 
             // label10
             // 
@@ -167,6 +186,7 @@ namespace Pharmacy
             this.txtDonVi.Name = "txtDonVi";
             this.txtDonVi.Size = new System.Drawing.Size(405, 27);
             this.txtDonVi.TabIndex = 4;
+            this.txtDonVi.Text = "Gói";
             // 
             // txtTenThuoc
             // 
@@ -174,6 +194,7 @@ namespace Pharmacy
             this.txtTenThuoc.Name = "txtTenThuoc";
             this.txtTenThuoc.Size = new System.Drawing.Size(405, 27);
             this.txtTenThuoc.TabIndex = 4;
+            this.txtTenThuoc.Text = "Thuốc ho bổ phế chỉ khái lộ";
             this.txtTenThuoc.TextChanged += new System.EventHandler(this.txtTenThuoc_TextChanged);
             // 
             // label7
@@ -285,21 +306,6 @@ namespace Pharmacy
             this.columnHeader6.Text = "Hạn sử dụng";
             this.columnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader6.Width = 150;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.BackColor = System.Drawing.Color.Teal;
-            this.btnXoa.Enabled = false;
-            this.btnXoa.FlatAppearance.BorderSize = 0;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(299, 261);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(150, 50);
-            this.btnXoa.TabIndex = 5;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // FormQuanLyThuoc
             // 
